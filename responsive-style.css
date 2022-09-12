@@ -1,0 +1,155 @@
+@media (min-width:991px) {
+    .faq_wrapper .row-in button {
+        margin-left: 0;
+    }
+
+    .card-title {
+        font-size: 42px
+    }
+
+    /*  */
+    .card .card-image {
+        margin-left: 70px;
+    }
+
+    .card .card-body {
+        margin-left: 70px;
+    }
+
+    /*  */
+
+    .card .right-col {
+        width: 40%;
+        height: 410px;
+    }
+
+
+    .row .right-col {
+
+        margin-left: 8%;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .card-body {
+        margin-top: 70px;
+    }
+
+    /*  */
+
+
+    .header_wrapper .navbar-brand img {
+        width: 150px;
+        height: auto;
+    }
+
+    .container .row-in input {
+        width: 110%;
+    }
+
+    .faq_wrapper .accordion-button {
+        height: 65px;
+    }
+
+    .header_wrapper .navbar-brand img {
+        height: auto;
+        width: 290px;
+    }
+
+    .header_wrapper .navbar {
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        left: -40px;
+        right: 5px;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .card .right-col {
+        margin-top: 40px;
+        width: 40%;
+        height: 330px;
+    }
+
+    .card-title {
+        font-size: 32px
+    }
+
+    .row .right-col {
+
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .card .right-col {
+        width: 80%;
+        height: 390px;
+        margin-left: 5%;
+    }
+
+    .header_wrapper .navbar-brand img {
+        height: auto;
+        width: 210px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 510px) {
+    .card .right-col {
+        width: 85%;
+        height: 350px;
+        margin-left: 7%;
+    }
+
+    .header_wrapper .navbar-brand img {
+        height: auto;
+        width: 195px;
+    }
+}
+
+@media (max-width:510px) {
+    .card .right-col {
+        width: 93%;
+        height: 310px;
+    }
+
+    .header_wrapper .navbar-brand img {
+        height: auto;
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .card-title {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .faq_wrapper .accordion-button {
+        height: 50px;
+    }
+
+    .container .row .btn {
+        margin-top: 15px;
+    }
+
+
+    .header_wrapper .navbar {
+        height: 90px;
+        position: absolute;
+        top: -40px;
+        left: -57px;
+        right: 0;
+    }
+
+
+}

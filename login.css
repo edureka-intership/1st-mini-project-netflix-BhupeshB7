@@ -1,0 +1,143 @@
+/* lOG-IN-SIGN-IN */
+.row button {
+    height: 40px;
+    width: 100%;
+}
+
+.row .input-e-p input {
+    height: 40px;
+    width: 100%;
+    background-color: #4e4848;
+    border: 1px solid #4e4848;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.input-e-p:focus-visible {
+    outline: none;
+}
+
+.input-e-p:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 2px;
+}
+
+.row .form-check {
+    color: #fff;
+    font-size: 14px;
+}
+
+.row .form-check a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.row .form-check a:hover {
+    color: #fff;
+    font-size: 14.25px;
+    text-decoration: underline;
+}
+
+.row .sign {
+    color: #737373;
+}
+
+.row .sign a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.row .sign p a {
+    color: blue;
+}
+
+.row .sign p {
+    font-size: 12px;
+}
+
+nav ul img {
+
+    height: auto;
+    width: 250px;
+}
+
+.login-display {
+    background-color: #000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.form-select {
+    width: 120px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-select:focus {
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.footer_row {
+
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.footer_row a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer_row a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:576px) {
+    nav ul img {
+        margin-left: -10%;
+        margin-top: -5%;
+    }
+}
+
+@media (min-width: 576px) {
+    .login-display {
+        background-image: url(./image/backg.jpg);
+        opacity: 90%;
+    }
+
+    .form_content {
+        height: 450px;
+        background: transparent;
+        background: rgba(0, 0, 0, 0.75);
+        border: 1px solid #000;
+        border-radius: 12px;
+    }
+
+    .container-fluid {
+        background: transparent;
+        background: rgba(0, 0, 0, 0.75);
+        border: 1px solid #000;
+    }
+
+    nav ul img {
+        margin-left: -5%;
+        margin-top: -2%;
+    }
+
+}
+
+@media (min-width:767px) {
+    nav ul img {
+        height: auto;
+        width: 330px;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+      <!--  -->
+    <!--Bootstrap-link -->
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- js-link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css">
+   
+</head>
+<body>
+     <!-- Log-in/sign-in ---START -->
+  <section class="login-display" id="login-display" >
+      
+        
+    <nav>
+        <ul><img src="image/logo2-removebg-preview.png" alt=""></ul>
+    </nav>
+    <form action="/myaction.php" name="myform" onsubmit=" return validateForm()" method="post">
+<div class="container">
+<div class="row">
+  <div class="form_content col-12 col-lg-5 col-md-6 col-sm-7 mx-auto mt-3">
+    <div class="row ">
+        <div class="col-12 col-lg-10 col-md-12 col-sm-12 mx-auto mt-5">
+         <h1 style="color: white;">Sign In</h1>
+        </div>
+      </div>
+    <!--  -->
+<div class="row ">
+  <div class="col-lg-10 mx-auto mt-4">
+    <div class="input-e-p" id="email">
+      <input
+        type="email"
+        name="femail"
+        id="username"
+        placeholder="Email or phone number" class="formerror" 
+      />
+      <p id="usererror"style="color: #737373" ></p>
+    </div>
+  </div>
+</div>
+<div class="row ">
+  <div class=" col-lg-10  mx-auto mt-4">
+    <div class="input-e-p">
+      <input type="password" name="pass" placeholder="password" id="password" class="formerror" /> 
+      <p id="userpass" style="color: #737373"></p>
+    </div>
+  </div>
+</div>
+<!--  -->
+<div class="row ">
+  <div class="col-lg-10  mx-auto mt-4">
+    <button type="submit" class="btn btn-danger" style="background-color: red;">Sign in</button>
+        
+  </div>
+</div>
+<!--  -->
+
+<div class="row ">
+  <div class="col-lg-10 col-sm-11 mx-auto mt-5">
+    <div class="sign">
+      <p>
+        This page is protected by Google reCAPTCHA to ensure you're not
+        a bot. <a href="#">Learn more</a>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+<!--  -->
+<div class="hrz" style="color: #fff;padding-top: 30px;"><hr /></div>
+<!--  -->
+<!--  -->
+<div class="footer_wrapper container-fluid ">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-lg-4 col-md-5 col-sm-7  mt-5">
+             <p style="color: #737373;">Questions? Call 000-800-040-1843</p>
+            </div>
+          </div>
+      <div class="row footer_row">
+        <div class="col-6 col-sm-2 footer_col"><a href="#">FAQs</a></div>
+        <div class="col-6 col-sm-2 footer_col">
+          <a href="#">Help Center</a>
+        </div>
+        <div class="col-6 col-sm-2 footer_col"><a href="#">Terms of use</a></div>
+        <div class="col-6 col-sm-2 footer_col"><a href="#">privacy</a></div>
+      </div>
+      <div class="row footer_row mt-3">
+        <div class="col-6 col-sm-2 footer_col">
+          <a href="#">Investor Relations</a>
+        </div>
+        <div class="col-6 col-sm-2 footer_col"><a href="#">Jobs</a></div>
+      </div>
+<!--  -->
+<!--  -->
+<div class="navbar  "> <a href="#">
+  <select class="form-select" aria-label="Default select example">
+  <option selected>English</option>
+  <option value="1">Hindi</option>
+</select></a></div>
+  <!--  -->
+
+<!--  -->
+
+</div>      
+<!--  -->
+
+</form>
+<!--  -->
+</section>
+<!-- Log-in/sign-in ---END --> 
+
+<!--  -->
+
+<script>
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
+  let flag =1;
+
+  function validateForm(){
+    
+   
+   
+    if(username.value==""){
+      document.getElementById("usererror").innerHTML="Enter valid email or phone number"
+      document.getElementById("username").style.borderBottom="2px solid orange" 
+
+      flag =0;
+    }
+    
+    
+    if(password.value ==""){
+      document.getElementById("userpass").innerHTML="Password must be required"
+      document.getElementById("password").style.borderBottom="2px solid orange"
+
+      flag=0;
+    }
+    
+    if(flag){
+      return true;
+    }else{
+      return false;
+    }
+  }
+</script>
+</body>
+</html>
